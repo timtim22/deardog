@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dear Dog – Understand the little signals</title>
+<meta name="description" content="A careful read of your dog's body language from one photo or a five-second clip, plus a calm next step. For iPhone.">
+<meta name="theme-color" content="#183D34">
+<meta name="color-scheme" content="dark">
+<meta name="apple-itunes-app" content="app-id=6812283995">
+<link rel="canonical" href="https://timtim22.github.io/deardog/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dear Dog – Understand the little signals">
+<meta property="og:description" content="A careful read of your dog's body language from one photo or a five-second clip. For iPhone.">
+<meta property="og:url" content="https://timtim22.github.io/deardog/">
+<meta property="og:image" content="https://timtim22.github.io/deardog/assets/og.png">
+<style>
+  @font-face { font-family: "Nunito"; src: url("assets/fonts/Nunito-ExtraBold.ttf") format("truetype"); font-weight: 800; font-display: swap; }
+  @font-face { font-family: "DM Sans"; src: url("assets/fonts/DMSans-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "DM Sans"; src: url("assets/fonts/DMSans-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
+  /* The app's Paper Paws colours, as in the ad. */
+  :root {
+    --pine: #183D34;
+    --deep-pine: #0E2822;
+    --paper: #F5EDDA;
+    --lemon: #EEE974;
+    --muted: #BDD0C0;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--pine);
+    color: var(--paper);
+    font: 400 17px/1.5 "DM Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: calc(20px + env(safe-area-inset-top)) 20px calc(40px + env(safe-area-inset-bottom));
+  }
+  a { color: var(--lemon); }
+  a:focus-visible { outline: 3px solid var(--lemon); outline-offset: 3px; border-radius: 6px; }
+
+  .brand { display: flex; align-items: center; gap: 10px; font: 800 22px/1 "Nunito", sans-serif; }
+  .brand img { width: 36px; height: 36px; border-radius: 9px; }
+
+  .hero { text-align: center; }
+  /* Milo in front of the lemon sun, as on the ad's end card. */
+  .art { position: relative; width: 280px; height: 280px; margin: 6px auto 0; }
+  .art::before {
+    content: "";
+    position: absolute;
+    left: 66px; top: 28px;
+    width: 190px; height: 190px;
+    border-radius: 50%;
+    background: var(--lemon);
+  }
+  .art img { position: relative; width: 280px; height: 280px; }
+  h1 {
+    margin: 4px 0 12px;
+    font: 800 clamp(34px, 10vw, 44px)/1.08 "Nunito", sans-serif;
+    letter-spacing: -0.01em;
+  }
+  h1 span { color: var(--lemon); }
+  .lead { margin: 0 auto; max-width: 400px; font-size: 18px; }
+
+  .cta {
+    display: block;
+    max-width: 360px;
+    margin: 24px auto 12px;
+    padding: 17px 24px;
+    border-radius: 999px;
+    background: var(--lemon);
+    color: var(--pine);
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  }
+  .cta:active { transform: scale(0.98); }
+  .fine { margin: 0; color: var(--muted); font-size: 14px; text-align: center; }
+
+  h2 { margin: 48px 0 14px; color: var(--lemon); font: 800 26px/1.2 "Nunito", sans-serif; }
+  ol, ul { margin: 0; padding: 0; list-style: none; }
+  li { position: relative; margin: 10px 0; padding: 15px 18px 15px 58px; border-radius: 18px; background: var(--deep-pine); }
+  li strong { display: block; font-size: 18px; }
+  .steps { counter-reset: step; }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    position: absolute;
+    left: 16px; top: 16px;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--lemon);
+    color: var(--pine);
+    font: 800 16px/28px "Nunito", sans-serif;
+    text-align: center;
+  }
+  .privacy li::before {
+    content: "";
+    position: absolute;
+    left: 25px; top: 24px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--lemon);
+  }
+  .more { margin: 12px 0 0; font-size: 15px; }
+
+  .note {
+    margin: 36px 0 0;
+    padding: 14px 16px;
+    border: 1px solid rgba(189, 208, 192, 0.35);
+    border-radius: 16px;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .end .cta { margin-top: 28px; }
+
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; text-align: center; }
+  footer a { color: var(--paper); }
+  footer p { margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+  <header class="brand">
+    <img src="apple-touch-icon.png" alt="" width="36" height="36">
+    <span>dear dog</span>
+  </header>
+
+  <section class="hero">
+    <div class="art">
+      <img src="assets/milo.png" alt="Milo, the illustrated dog from the Dear Dog app" width="280" height="280">
+    </div>
+    <h1>Understand the <span>little signals.</span></h1>
+    <p class="lead">Dear Dog gives you a careful read of your dog's body language from one photo or a five-second clip, plus a calm next step.</p>
+    <a class="cta" data-store href="https://apps.apple.com/app/id6812283995">Download on the App Store</a>
+    <p class="fine">For iPhone with iOS 17 or later<br>Monthly or annual subscription</p>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><strong>Point your camera.</strong> Hold still and tap for a photo, or hold for a five-second clip.</li>
+      <li><strong>See what we noticed.</strong> Ears, eyes, tail and posture in plain words, including what stayed unclear.</li>
+      <li><strong>Ask about it.</strong> Ask a follow-up question about that look.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Yours stays yours.</h2>
+    <ul class="privacy">
+      <li>Nothing is sent until you tap <em>Use this</em>. Then the photo, or a few frames of the clip, goes through Dear Dog's service to Google Gemini for the read.</li>
+      <li>Looks are saved on your iPhone only, and you can delete them any time.</li>
+      <li>No account, no ads, no tracking.</li>
+    </ul>
+    <p class="more"><a href="https://deardog-api-920946905469.us-central1.run.app/privacy">Read the privacy policy</a></p>
+  </section>
+
+  <p class="note">A tentative read of visible body language, not a diagnosis or a translation of your dog's thoughts. For illness or pain, contact a veterinarian.</p>
+
+  <section class="end">
+    <a class="cta" data-store href="https://apps.apple.com/app/id6812283995">Download on the App Store</a>
+  </section>
+
+  <footer>
+    <p>
+      <a href="https://deardog-api-920946905469.us-central1.run.app/privacy">Privacy</a> ·
+      <a href="https://deardog-api-920946905469.us-central1.run.app/support">Support</a> ·
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+    </p>
+    <p>This page uses no cookies or analytics.</p>
+    <p>© 2026 Dear Dog</p>
+  </footer>
+</main>
+<script>
+  // Ads add Apple's campaign tags (pt, ct, mt) to this page's address. Pass them on to the App Store link so
+  // App Store Connect can count downloads per ad. Without a provider token (pt), keep the plain link.
+  (function () {
+    var page = new URLSearchParams(window.location.search);
+    var tags = new URLSearchParams();
+    ["pt", "ct", "mt"].forEach(function (key) {
+      var value = page.get(key);
+      if (value && /^[A-Za-z0-9_.-]{1,100}$/.test(value)) tags.set(key, value);
+    });
+    if (!tags.has("pt")) return;
+    if (!tags.has("mt")) tags.set("mt", "8");
+    var link = "https://apps.apple.com/app/apple-store/id6812283995?" + tags.toString();
+    document.querySelectorAll("a[data-store]").forEach(function (a) { a.href = link; });
+  })();
+</script>
+</body>
+</html>
